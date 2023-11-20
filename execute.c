@@ -33,18 +33,10 @@ void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number)
 	instruction_t instructions[] = {
 		{"push", op_push},
 		{"pall", op_pall},
-		{"pint", op_pint},
-		{"pop", op_pop},
-		{"swap", op_swap},
-		{"nop", op_nop},
-		{"add", op_add},
-		{"sub", op_sub},
 		{"div", op_div},
 		{"mul", op_mul},
-		{"mod", op_mod},
 		{"pchar", op_pchar},
 		{"pstr", op_pstr},
-		{NULL, NULL}
 	};
 	int i;
 
